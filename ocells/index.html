@@ -13,4 +13,38 @@
     <script src="sketch.js"></script>
   </body>
 </html>
+let mic;
+function setup() {
+  createCanvas(700, 700);
+  mic=new p5.AudioIn();
+  mic.start();
+}
 
+function draw() {
+  let vol=mic.getLevel();
+  background(200);
+  let h=map(vol, 0,1,0,300);
+  fill(120-h*30,230,140+h*10);
+  beginShape();
+  vertex(350,0);
+  vertex(700,150+h*15);
+  vertex(350,250);
+  vertex(700,350-h*15);
+  vertex(400,350);
+  vertex(450,700);
+  vertex(200,700);
+  vertex(150,500);
+  vertex(0,150);
+  endShape(CLOSE);
+  fill(20);
+  ellipse(350,50,50+h*5,50+h*5)
+  fill(100-h*30,100+h*40,240-h*60);
+ellipse(350,50,20+h*5,20+h*5)
+} 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
