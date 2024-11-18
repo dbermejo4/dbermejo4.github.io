@@ -39,7 +39,7 @@
     font-size: 1.25rem; /* Ajusta la mida de la font si és necessari */
 }  
 .content-container {
-            margin-left: 10px;
+            margin-left: 10px; 
             margin-right: 10px; /* Marges laterals ajustats */
             margin-top: 20px; /* Afegeix espai superior entre el contingut i la barra de menú */
         }
@@ -52,7 +52,7 @@
     <div class="container-fluid">
        <a class="navbar-brand d-flex align-items-center" href="#">
     <img src="logo.png" alt="Logo" width="50" class="logo">
-    <span class="brand-text">Web de David</span>
+    <span class="brand-text">Explicacio del codi</span>
 </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
