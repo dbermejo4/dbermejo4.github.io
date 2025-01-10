@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
+function setup() {
+  let canvas = createCanvas(windowWidth, windowHeight);
+  canvas.parent('p5-canvas');  // Coloca el canvas dentro del div con id p5-canvas
+}
 
-  </head>
-  <body>
-    <main>
-    </main>
-    <script src="sketch.js"></script>
-  </body>
-</html>
+function draw() {
+  background(220);
+  // Aquí puedes agregar el código de tu interacción o dibujo con p5.js
+}
 
